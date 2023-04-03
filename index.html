@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  var i = 0;
+  
+  var speed = 100;
+  function type1() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(type1, speed);
+    }
+  }</script>
+
+<body>
+  <audio controls autoplay loop>
+    <source src="./music/I-Do-911.mp3">
+  </audio>
+  <div class="birthday">
+    <div class="birthday_inner">
+      <div class="birthday_inner__modal">
+        <div class="modal_image">
+          <img />
+        </div>
+        <div class="modal_content">
+          <h1>Title</h1>
+          <p>Content</p>
+          <button>Huyền xênh gái</button>
+        </div>
+      </div>
+      <div class="birthday_inner__stage stage1">
+        <div class="intro_cake">
+          <img class="intro" src="" />
+          <div class="gallery">
+            <span style="--i:1">
+              <img src="./img/273023014_1099036970857358_3226688040994633631_n.jpg" alt="" />
+            </span>
+            <span style="--i:2">
+              <img src="./img/274694157_1115659809195074_3726252172737616652_n.jpg" alt="" />
+            </span>
+            <span style="--i:3">
+              <img src="./img/293162368_1207489746678746_4487680599700580952_n.jpg" alt="" />
+            </span>
+            <span style="--i:4">
+              <img src="./img/293255193_1207490093345378_7271525469279970052_n.jpg" alt="" />
+            </span>
+            <span style="--i:5">
+              <img src="./img/333323601_560901299436889_8876474589727818780_n.jpg" alt="" />
+            </span>
+            <span style="--i:6">
+              <img src="./img/331229182_767795167768519_1174004186334284284_n.jpg" alt="" />
+            </span>
+            <span style="--i:7">
+              <img src="./img/332842803_913146306772538_1562403897863961641_n.jpg" alt="" />
+            </span>
+            <span style="--i:8">
+              <img src="./img/299192033_1226229728138081_4520453034132977720_n.jpg" alt="" />
+            </span>
+          </div>
+        </div>
+        <button class="start">Em nhấn vào đây nhé </button>
+      </div>
+      
+        <div class="mix">
+         
+          </div>
+        </div>
+       
+      </div>
+     
+      </div>
+      <div class="birthday_inner__stage stage4">
+        
+        
+        
+        <div class="startagain">Start again</div>
+        <button class="add" onclick="type1()">Add the candle</button>
+        <button class="sa">Start again</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="myscript.js"></script>
+
+</html>
